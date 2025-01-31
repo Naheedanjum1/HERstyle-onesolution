@@ -1,0 +1,185 @@
+
+    
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: black;
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: #e7e3e3;
+            padding: 15px 20px;
+        }
+
+        .logo img {
+            max-width: 100px;
+            height: auto;
+        }
+
+        .search-bar {
+            display: flex;
+            align-items: center;
+            flex: 1;
+            max-width: 500px;
+            margin: 0 15px;
+        }
+
+        .search-bar input {
+            flex: 1;
+            padding: 8px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        .search-bar button {
+            padding: 8px 15px;
+            border: none;
+            background: #e60073;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-left: 5px;
+        }
+
+        .nav-icons {
+            display: flex;
+            gap: 15px;
+        }
+
+        .icon-container {
+            position: relative;
+        }
+
+        .icon-container img {
+            width: 40px;
+            height: 40px;
+            cursor: pointer;
+        }
+
+        .tooltip {
+            display: none;
+            position: absolute;
+            background: #000;
+            color: #fff;
+            padding: 5px;
+            border-radius: 3px;
+            font-size: 12px;
+            bottom: -25px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .icon-container:hover .tooltip {
+            display: block;
+        }
+
+        .scrolling-navbar {
+            background: #e60073;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+
+        .hero {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 50px 20px;
+            background: white;
+            text-align: center;
+        }
+
+        .hero img {
+            max-width: 100%;
+            height: auto;
+            margin-top: 20px;
+        }
+
+        .hero button {
+            background: #e60073;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        .categories {
+            text-align: center;
+            padding: 30px 20px;
+        }
+
+        .category-grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+        }
+
+        .category {
+            text-align: center;
+            background: #eee;
+            padding: 10px;
+            border-radius: 8px;
+            width: 150px;
+        }
+
+        .category img {
+            width: 100px;
+            height: auto;
+            border-radius: 5px;
+        }
+
+        /* Login Page Styling */
+        .login-container {
+            max-width: 400px;
+            margin: 50px auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .login-container h2 {
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        .login-form input {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        .login-form button {
+            width: 100%;
+            background: #e60073;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .login-form button:hover {
+            background: #cc005f;
+        }
+
+        @media (min-width: 768px) {
+            .hero {
+                flex-direction: row;
+                text-align: left;
+            }
+        }
